@@ -13,15 +13,26 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.datasets import dump_svmlight_file
-from sklearn.cluster import KMeans, AgglomerativeClustering
+from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn import metrics
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import seaborn as sns
 
+from sklearn.decomposition import TruncatedSVD
+from sklearn.preprocessing import Normalizer
+from sklearn.pipeline import make_pipeline
+
+sns.set_context('poster')
+sns.set_color_codes()
+plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 # 
+
+
 dataSetDir2 = os.path.join(os.getcwd(), "dataset")
+
 
 # """
 # filter non-ascii string, for instance //x08
@@ -85,9 +96,6 @@ print("Performing dimensionality reduction using LSA")
 # spherical k-means for better results. Since LSA/SVD results are
 # not normalized, we have to redo the normalization.
 
-from sklearn.decomposition import TruncatedSVD
-from sklearn.preprocessing import Normalizer
-from sklearn.pipeline import make_pipeline
 
 svd = TruncatedSVD(n_components=200)
 normalizer = Normalizer(copy=False)
@@ -99,7 +107,7 @@ X = lsa.fit_transform(X)
 explained_variance = svd.explained_variance_ratio_.sum()
 print("Explained variance of the SVD step: {}%".format(int(explained_variance * 100)))
 
-print(X.shape)
+# print(X.shape)
 
 """
 export the TF-IDF vectors table into csv file
@@ -108,6 +116,49 @@ results = pd.DataFrame(X)
 
 results.to_csv("2.csv", encoding='utf-8')
 #--------------------------------------------------------------
+
+
+"""
+DBSCAN clustering 
+get the number of clusters
+"""
+
+# # Compute DBSCAN
+# db = DBSCAN(eps=1.1, min_samples=2).fit(X)
+# core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
+# core_samples_mask[db.core_sample_indices_] = True
+# labels = db.labels_
+
+# print(labels)
+
+# # Number of clusters in labels, ignoring noise if present.
+# n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
+# n_noise_ = list(labels).count(-1)
+
+# print('Estimated number of clusters: %d' % n_clusters_)
+# print('Estimated number of noise points: %d' % n_noise_)
+
+# # #############################################################################
+# # Plot result
+
+# # Black removed and is used for noise instead.
+# unique_labels = set(labels)
+# colors = [plt.cm.Spectral(each) for each in np.linspace(0, 1, len(unique_labels))]
+# for k, col in zip(unique_labels, colors):
+#     if k == -1:
+#         # Black used for noise.
+#         col = [0, 0, 0, 1]
+
+#     class_member_mask = (labels == k)
+
+#     xy = X[class_member_mask & core_samples_mask]
+#     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=14)
+
+#     xy = X[class_member_mask & ~core_samples_mask]
+#     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=6)
+
+# plt.title('Estimated number of clusters: %d' % n_clusters_)
+# plt.show()
 
 
 """
@@ -158,6 +209,15 @@ centers_cluster_handle.close()
 terms = count_vectorizer.get_feature_names()
 #--------------------------------------------------------------
 
+labels = km.predict(X);
+palette = sns.color_palette('deep', np.unique(labels).max() + 1)
+colors = [palette[x] if x >= 0 else (0.0, 0.0, 0.0) for x in labels]
+plt.scatter(X.T[0], X.T[1], c=colors, **plot_kwds)
+frame = plt.gca()
+frame.axes.get_xaxis().set_visible(False)
+frame.axes.get_yaxis().set_visible(False)
+plt.show()
+# plt.title('Clusters found by {}'.format(str(algorithm.__name__)), fontsize=24)
 """
 Plotting Clusters
 
@@ -225,3 +285,15 @@ clustering_file_handle.close()
 
 print("Silhouette Coefficient: %0.3f"
       % metrics.silhouette_score(X, km.labels_, sample_size=1000))
+
+
+lines_for_predicting = ["tf and idf is awesome!", "some androids is there"]
+sample = count_vectorizer.transform(lines_for_predicting)
+print(sample)
+sample = lsa.transform(sample)
+print(sample)
+prelabel = km.predict(sample)
+distance = km.transform(sample)
+
+print(prelabel)
+print(distance)
