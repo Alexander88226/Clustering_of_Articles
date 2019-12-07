@@ -277,21 +277,29 @@ for i in range(0, k_clusters):
 
     # export filenames for each cluster
     for index in indexs:
-        clustering_file_handle.write("%d, %s\n"%(i, all_data.filenames[fileindexs[index]]))
+        clustering_file_handle.write("%d, %s, %s\n"%(i, all_data.filenames[fileindexs[index]], str(d[index])))
 
 clustering_file_handle.close()
-
-
-
 print("Silhouette Coefficient: %0.3f"
       % metrics.silhouette_score(X, km.labels_, sample_size=1000))
 
 
-lines_for_predicting = ["tf and idf is awesome!", "some androids is there"]
+
+"""
+get the query article
+and predict the cluster of query article
+and display the distance array
+"""
+testfile = sys.argv[1]
+testfile_handle = open(testfile, 'r') 
+lines_for_predicting = testfile_handle.read()
+
+lines_for_predicting = [lines_for_predicting]
+
 sample = count_vectorizer.transform(lines_for_predicting)
-print(sample)
+print(sample.shape)
 sample = lsa.transform(sample)
-print(sample)
+print(sample.shape)
 prelabel = km.predict(sample)
 distance = km.transform(sample)
 
