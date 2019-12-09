@@ -63,15 +63,15 @@ lsa = make_pipeline(svd, normalizer)
 
 data = lsa.fit_transform(X)
 
-plot_clusters(data, cluster.KMeans, (), {'n_clusters':6})
+plot_clusters(data, cluster.KMeans, (), {'n_clusters':10})
 
 plot_clusters(data, cluster.AffinityPropagation, (), {'preference':-5.0, 'damping':0.95})
 
 plot_clusters(data, cluster.MeanShift, (0.175,), {'cluster_all':False})
 
-plot_clusters(data, cluster.SpectralClustering, (), {'n_clusters':6})
+plot_clusters(data, cluster.SpectralClustering, (), {'n_clusters':10})
 
-plot_clusters(data, cluster.AgglomerativeClustering, (), {'n_clusters':6, 'linkage':'ward'})
+plot_clusters(data, cluster.AgglomerativeClustering, (), {'n_clusters':10, 'linkage':'ward'})
 
 plot_clusters(data, cluster.DBSCAN, (), {'eps':1.1, 'min_samples':2})
 
