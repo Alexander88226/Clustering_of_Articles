@@ -1,189 +1,189 @@
 cluster 0, label ['egovern', 'epay', 'labour', 'worker', 'servic', 'formal', 'payment', 'employ', 'inform', 'cent']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Impact-of-Financial-Technology-on-Fa.txt, 1.1479967690549533
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-technologies-and-the-transition-to-f.txt, 1.1948683096886066
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Impact-of-Financial-Technology-on-Fa.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-technologies-and-the-transition-to-f.txt
 cluster 1, label ['firm', 'sme', 'financ', 'export', 'internation', 'variabl', 'debt', 'loan', 'access', 'romanian']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Export-strategies-adopted-by-Romanian-SM.txt, 1.132673614521695
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Internationalization-of-SMEs-New-Insigh.txt, 1.0605502713231334
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Financing-from-Demand-Side.txt, 0.9953252290243486
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-canadian-SME-exporters.txt, 1.0499363903093353
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-evaluation-of-the-factors-influence-.txt, 0.9317349125607337
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-impact-of-firm-characteristics-in-ac.txt, 1.1117250099505147
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Export-strategies-adopted-by-Romanian-SM.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Internationalization-of-SMEs-New-Insigh.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Financing-from-Demand-Side.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-canadian-SME-exporters.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-evaluation-of-the-factors-influence-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-impact-of-firm-characteristics-in-ac.txt
 cluster 2, label ['financ', 'bank', 'crowdfund', 'market', 'thi', 'busi', 'capit', 'sme', 'luxembourg', 'financi']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-Innovation-Can-Improve-Financial.txt, 0.9230183824195751
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Using-Design-Thinking-to-identify-bankin.txt, 0.9728138442740388
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Brand-Identity-Ontology..txt, 0.8804132213174443
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-STRUCTURED-CRITICAL-SUCCESS-FACTORS-MO.txt, 1.012659549380576
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Making-Sense-of-Regulations-with-SBVR..txt, 0.9159717875333881
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Eximchain-Supply-Chain-Finance-solution.txt, 0.8967993448264163
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\ZOOM-IN-ON-THE-FIRST-EVER-SWISS-FINTECH-.txt, 0.9181536672022181
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\State-of-the-UK-GovTech-Market.txt, 0.9467978946543896
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bank-competition-through-the-credit-cycl.txt, 0.9609044269007792
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-Smaller-Companies-Network-Linking-F.txt, 0.9851324584252418
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\GRCTC-WORKING-PAPER-June-2015.txt, 0.9571701211575371
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Spotlighting-opportunities-for-business-.txt, 0.9016711746949366
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Basel-III-and-SME-financing.txt, 0.9355892431883847
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Influencer-Marketing-as-an-Innovative-To.txt, 0.9643008660650902
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-role-of-crowdfunded-debt-in-early-st.txt, 0.9244471197424808
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Business-Agility-Strategy-Peer-to-Peer-.txt, 0.9668452914109618
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-close-are-we-to-a-Capital-Markets-Un.txt, 0.8652223220860322
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Risk-Management-from-the-Perspective-of-.txt, 0.9771309918689054
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Capital.txt, 0.9104514812348958
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Factoring®Cfinancing-alternative-for-SMEs.txt, 0.9410360364610258
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Frank-Jan-de-Graaf-Kirsten-Rauwerda-Lex-.txt, 0.8943742524704172
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SMEs_-Alternative-Financing-The-Case-of.txt, 0.9449866836330377
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Everything-you-need-to-know-right-now-ab.txt, 0.9310816586524548
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Awareness-and-perception-analysis-of-sma.txt, 0.9615075043457383
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-Directions-in-Crowdfunding.txt, 0.9187447818165788
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-rise-of-alternative-finance-how-fin.txt, 0.928238949847019
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-Innovation-Can-Improve-Financial.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Using-Design-Thinking-to-identify-bankin.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Brand-Identity-Ontology..txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-STRUCTURED-CRITICAL-SUCCESS-FACTORS-MO.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Making-Sense-of-Regulations-with-SBVR..txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Eximchain-Supply-Chain-Finance-solution.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\ZOOM-IN-ON-THE-FIRST-EVER-SWISS-FINTECH-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\State-of-the-UK-GovTech-Market.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bank-competition-through-the-credit-cycl.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-Smaller-Companies-Network-Linking-F.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\GRCTC-WORKING-PAPER-June-2015.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Spotlighting-opportunities-for-business-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Basel-III-and-SME-financing.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Influencer-Marketing-as-an-Innovative-To.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-role-of-crowdfunded-debt-in-early-st.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Business-Agility-Strategy-Peer-to-Peer-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-close-are-we-to-a-Capital-Markets-Un.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Risk-Management-from-the-Perspective-of-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Capital.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Factoring®Cfinancing-alternative-for-SMEs.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Frank-Jan-de-Graaf-Kirsten-Rauwerda-Lex-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SMEs_-Alternative-Financing-The-Case-of.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Everything-you-need-to-know-right-now-ab.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Awareness-and-perception-analysis-of-sma.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-Directions-in-Crowdfunding.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-rise-of-alternative-finance-how-fin.txt
 cluster 3, label ['sme', 'financ', 'enterpris', 'credit', 'financi', 'bank', 'guarante', 'china', 'capit', 'loan']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Enterprise-Financing-Modeling-Based-on-I.txt, 0.7956922065166289
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-importance-of-leasing-for-SME-financ.txt, 0.9115064869460922
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-Risk-Evaluation-of-SME-Finan.txt, 0.6778689810694184
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Development-of-SME-sector-in-Poland-.txt, 1.0364737571865796
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-credit-risk-evaluation-based-o.txt, 1.0279321667330943
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Study-on-the-Small-and-Middle-Enterprise.txt, 1.061121746144102
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Credit-Guarantee-in-China-and-Risk-E.txt, 0.9458560447253089
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Study-of-Financing-Preferences-and-Capi.txt, 1.0200133136970746
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Developing-the-capital-market-to-widen-a.txt, 0.7634365311069181
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-study-on-the-influences-of-financing-o.txt, 1.0813466651921668
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-sources-for-Romanian-SMEs-in-t.txt, 0.907436219575063
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-research-on-impact-of-the-capital-stru.txt, 1.074806115539677
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-the-Impact-of-Financial-Ecol.txt, 1.0890242502595402
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Boosting-SMEs-with-better-and-innovative.txt, 0.6624113025158396
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Small-and-medium-enterprises_-access-to-.txt, 1.0213483303717314
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Considerations-regarding-growing-financi.txt, 1.094453275373462
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Financing-of-the-Post-crisis-Era-in-.txt, 1.062523453640169
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Analysis-on-financing-difficulties-of-sm.txt, 1.035676533392995
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-difficulties-of-SMEs-from-its-.txt, 0.8429889340141781
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Research-of-Financing-Risk-Management-.txt, 1.1203135796815367
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-SME-Financing-and-Its-Develo.txt, 0.9588576513280415
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Enterprise-Financing-Modeling-Based-on-I.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-importance-of-leasing-for-SME-financ.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-Risk-Evaluation-of-SME-Finan.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Development-of-SME-sector-in-Poland-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-credit-risk-evaluation-based-o.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Study-on-the-Small-and-Middle-Enterprise.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Credit-Guarantee-in-China-and-Risk-E.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Study-of-Financing-Preferences-and-Capi.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Developing-the-capital-market-to-widen-a.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-study-on-the-influences-of-financing-o.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-sources-for-Romanian-SMEs-in-t.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-research-on-impact-of-the-capital-stru.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-the-Impact-of-Financial-Ecol.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Boosting-SMEs-with-better-and-innovative.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Small-and-medium-enterprises_-access-to-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Considerations-regarding-growing-financi.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-Financing-of-the-Post-crisis-Era-in-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Analysis-on-financing-difficulties-of-sm.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-difficulties-of-SMEs-from-its-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Research-of-Financing-Risk-Management-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Research-on-SME-Financing-and-Its-Develo.txt
 cluster 4, label ['sme', 'bank', 'financ', 'busi', 'loan', 'financi', 'small', 'credit', 'firm', 'thi']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Involvement-of-accountants-and-bankers-i.txt, 0.8468822608627345
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Challenges-experienced-by-young-entrepre.txt, 0.7852686639417177
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-the-small-scale-industries-in-.txt, 0.907070433794511
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Rural-tourism-development-and-financing-.txt, 0.9121004367591751
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INSTITUTIONALIZATION-OF-SME_S-IN-TURKEY-.txt, 0.7453104630526952
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Asymmetric-Information-and-SME-Financing.txt, 1.0275106834919028
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Owner-managers_-preferences-for-financin.txt, 0.8698026768772754
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Analysis-on-financing-difficulties-for-S.txt, 1.0338257222103
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Banking-and-SME-financing-in-the-United-.txt, 0.9907441813164984
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-financing-problems-of-small-and-medi.txt, 0.8506008938141569
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Issues-and-perspectives-of-financing-SME.txt, 0.7493545878853289
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Peer-to-peer-(P2P)-lending-platform-adop.txt, 1.0519820226512275
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-constraints-of-SMEs-in-develop.txt, 0.8405571297151978
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-financing-in-the-Netherlands.txt, 0.9909724395658283
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-financing-in-the-Euro-Area.txt, 1.034698517085604
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Small-business-financing-initiatives-in-.txt, 0.9707544311320058
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-New-Basel-Capital-Accord-and-SME-Fin.txt, 0.9973361057096456
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\G20OECD-Effective-Approaches-for-Implem.txt, 0.9958679540886524
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Alternative-model-for-financing-SMEs-in-.txt, 1.0924538738905418
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Difficulties-in-securing-funding-from-ba.txt, 1.0556763052373621
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-challenges-behind-smes_-access-to-de.txt, 0.9974816699209927
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Involvement-of-accountants-and-bankers-i.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Challenges-experienced-by-young-entrepre.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-the-small-scale-industries-in-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Rural-tourism-development-and-financing-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INSTITUTIONALIZATION-OF-SME_S-IN-TURKEY-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Asymmetric-Information-and-SME-Financing.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Owner-managers_-preferences-for-financin.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Analysis-on-financing-difficulties-for-S.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Banking-and-SME-financing-in-the-United-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-financing-problems-of-small-and-medi.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Issues-and-perspectives-of-financing-SME.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Peer-to-peer-(P2P)-lending-platform-adop.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-constraints-of-SMEs-in-develop.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-financing-in-the-Netherlands.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-financing-in-the-Euro-Area.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Small-business-financing-initiatives-in-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-New-Basel-Capital-Accord-and-SME-Fin.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\G20OECD-Effective-Approaches-for-Implem.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Alternative-model-for-financing-SMEs-in-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Difficulties-in-securing-funding-from-ba.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-challenges-behind-smes_-access-to-de.txt
 cluster 5, label ['islam', 'fintech', 'zakat', 'shariah', 'financ', 'crowdfund', 'malaysia', 'bank', 'financi', 'thi']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-Inclusion-through-Efficient-Za.txt, 1.0605608169784912
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-INFLUENCE-OF-ORGANIZATIONAL-TECHNOLO.txt, 1.0710158287643379
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-CONCEPT-OF-FUTURE-ISLAMIC-AUTOMOBILE.txt, 1.1095833160245505
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Adoption-of-Shariah-Compliant-Peer-To-Bu.txt, 1.1290769430712921
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BIG-DATA-AND-FINTECH-IN-ISLAMIC-FINANCE.txt, 1.0471986036878267
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Islamic-Crowdfunding-Fundamentals,-Deve.txt, 1.0502792450718188
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Islamic-Bank-Service-Quality-and-Its-Imp.txt, 1.0573466215732503
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Impact-of-Fintech-On-The-Sustainabil.txt, 1.0682656359869598
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-Inclusion-through-Efficient-Za.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-INFLUENCE-OF-ORGANIZATIONAL-TECHNOLO.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-CONCEPT-OF-FUTURE-ISLAMIC-AUTOMOBILE.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Adoption-of-Shariah-Compliant-Peer-To-Bu.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BIG-DATA-AND-FINTECH-IN-ISLAMIC-FINANCE.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Islamic-Crowdfunding-Fundamentals,-Deve.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Islamic-Bank-Service-Quality-and-Its-Imp.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Impact-of-Fintech-On-The-Sustainabil.txt
 cluster 6, label ['blockchain', 'nancial', 'technolog', 'data', 'cryptocurr', 'thi', 'payment', 'nanc', 'trade', 'bank']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-2020-reprendre-l_initiative.txt, 0.9727216557195408
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\10-40-am-Europe-Panel-Discussion.txt, 0.9692780564026144
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTechRegTech.txt, 0.9943917649537792
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\What-Determines-the-Acceptance-of-Crypto.txt, 0.9672611028155298
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BRICS-Market-Research-for-a-SME-Expansio.txt, 1.0120906870418145
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-Technology-in-Indonesia-A-Fra.txt, 0.977873596292972
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-risk-management-A-research-chal.txt, 0.9715976699835112
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Prospects-of-Innovative-Technologies-int.txt, 0.9751850372141141
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\PAYMENT-SERVICES-AND-DIGITISATION.txt, 0.9912190363378733
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Eurasian-Journal-of-Analytical-Chemistry.txt, 1.0489808736785167
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Blockchain-Technology-Revenue-Streams-o.txt, 0.9642589943568802
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\R3-Reports.txt, 1.0071821178893507
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Disruptive-Technologies-and-Sustainable-.txt, 0.9760544005331271
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Connecting-Disparate-Data.txt, 0.9522511367646185
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Future-of-FinTech.txt, 0.9795475394422837
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Feasibility-of-Blockchain-for-Supply.txt, 1.0163665951717302
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\USE-OF-BLOCKCHAIN-AND-ARITIFICIAL-INTELL.txt, 0.9697495991258605
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-2020-reprendre-l_initiative.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\10-40-am-Europe-Panel-Discussion.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTechRegTech.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\What-Determines-the-Acceptance-of-Crypto.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BRICS-Market-Research-for-a-SME-Expansio.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-Technology-in-Indonesia-A-Fra.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-risk-management-A-research-chal.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Prospects-of-Innovative-Technologies-int.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\PAYMENT-SERVICES-AND-DIGITISATION.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Eurasian-Journal-of-Analytical-Chemistry.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Blockchain-Technology-Revenue-Streams-o.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\R3-Reports.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Disruptive-Technologies-and-Sustainable-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Connecting-Disparate-Data.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Future-of-FinTech.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Feasibility-of-Blockchain-for-Supply.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\USE-OF-BLOCKCHAIN-AND-ARITIFICIAL-INTELL.txt
 cluster 7, label ['fintech', 'mexico', 'latin', 'que', 'por', 'financi', 'del', 'como', 'america', 'bank']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\El-crecimiento-de-la-industria-fintech-e.txt, 1.0707908582110113
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Efforts-to-create-a-more-financially-sus.txt, 1.1341179848024543
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Mexico_s-Nascent-Fintech-Offers-Promise,.txt, 1.1238629984007076
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\El-crecimiento-de-la-industria-fintech-e.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Efforts-to-create-a-more-financially-sus.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Mexico_s-Nascent-Fintech-Offers-Promise,.txt
 cluster 8, label ['cid', 'financ', 'firm', 'kosovo', 'invest', 'bank', 'sme', 'busi', 'httpdxdoiorg', 'loan']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-role-of-banks-in-small-and-medium-en.txt, 1.238105031980334
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SHIRIN-IMANBAEVA-_-UTZ-DORNBERGER-UNIVER.txt, 1.2839463291065238
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-role-of-banks-in-small-and-medium-en.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SHIRIN-IMANBAEVA-_-UTZ-DORNBERGER-UNIVER.txt
 cluster 9, label ['bank', 'digit', 'custom', 'design', 'think', 'financi', 'busi', 'servic', 'new', 'payment']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-Payment-as-an-Enabler-for-Busine.txt, 1.005987959798766
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Platinum-Sponsor.txt, 1.0591753748915966
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Design-Thinking.txt, 1.037664812692588
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bank-market-structure,-competition,-and-.txt, 1.0855370080560864
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Banking-Outside-in-How-Design-Thinking-.txt, 1.0875879472165308
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-pillars-of-the-banking-business-mode.txt, 1.0605772864861835
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Top-10-retail-banking-trends-and-predict.txt, 1.0403535840065747
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\MANAGING-DIGITALIZATION-IN-BANKING-CHAL.txt, 1.0734806566312314
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Frontiers-of-Financial-Technology.txt, 1.1287819046674263
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-banking-manifesto-the-end-of-ba.txt, 1.033967465998371
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-Payment-as-an-Enabler-for-Busine.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Platinum-Sponsor.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Design-Thinking.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bank-market-structure,-competition,-and-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Banking-Outside-in-How-Design-Thinking-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\New-pillars-of-the-banking-business-mode.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Top-10-retail-banking-trends-and-predict.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\MANAGING-DIGITALIZATION-IN-BANKING-CHAL.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Frontiers-of-Financial-Technology.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Digital-banking-manifesto-the-end-of-ba.txt
 cluster 10, label ['innov', 'sme', 'firm', 'growth', 'sef', 'cluster', 'develop', 'knowledg', 'support', 'financ']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Sequential-coherence-as-a-determinant-of.txt, 0.9472721635774887
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Investment-funds-and-portfolio-of-loan-g.txt, 0.9404225197874698
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-can-SMEs-support-growth-in-a-low-gro.txt, 1.0419574351179826
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Creation-of-Support-Ecosystem-for-Innova.txt, 1.1134218204455868
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SMEs-face-a-wide-range-of-barriers-to-in.txt, 1.088263602293933
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-innovative-small-and-mediumsiz.txt, 1.0521434846042195
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-strategic-management-and-innovation°™.txt, 0.918682871403307
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Sequential-coherence-as-a-determinant-of.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Investment-funds-and-portfolio-of-loan-g.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\How-can-SMEs-support-growth-in-a-low-gro.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Creation-of-Support-Ecosystem-for-Innova.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SMEs-face-a-wide-range-of-barriers-to-in.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financing-innovative-small-and-mediumsiz.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\SME-strategic-management-and-innovation°™.txt
 cluster 11, label ['rcher', 'fachhochschul', 'stadelmann', 'elezi', 'speaker', 'cluster', 'annpr', 'learn', 'tuggen', 'schmidhub']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Machine-Learning-for-Pattern-Recognition.txt, 1.399733694534746
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Data-Science@-ZHAW.txt, 1.4007166948106362
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Machine-Learning-for-Pattern-Recognition.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Data-Science@-ZHAW.txt
 cluster 12, label ['msme', 'data', 'cold', 'credit', 'bank', 'financi', 'altern', 'financ', 'databank', 'chain']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Identification-of-benchmarks-for-adoptio.txt, 1.0424892609010326
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Use-of-Alternative-Data-to-Enhance-Credi.txt, 1.0338555519196215
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INDONESIAN-SMALL-BUSINESSES-AND-THEIR-AC.txt, 1.1197087823321852
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Problems-related-to-the-Financing-of-Sma.txt, 1.0690544497703767
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Expanding-Data-Collection-to-Streamline-.txt, 1.1428317552914196
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Identification-of-benchmarks-for-adoptio.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Use-of-Alternative-Data-to-Enhance-Credi.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INDONESIAN-SMALL-BUSINESSES-AND-THEIR-AC.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Problems-related-to-the-Financing-of-Sma.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Expanding-Data-Collection-to-Streamline-.txt
 cluster 13, label ['technolog', 'digit', 'busi', 'data', 'accentur', 'startup', 'economi', 'innov', 'romanian', 'model']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Social-and-Environmental-Considerations-.txt, 0.7687472614433839
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Technology-Commercialization-and-Entrepr.txt, 1.0781600640685285
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Framework-for-understanding-_-classify.txt, 1.064359680923925
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Data-The-Fuel-of-the-Digital-Economy-an.txt, 0.8158437798775454
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Policy-Agenda-for-the-Digital-Economy.txt, 1.0341629315116865
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\State-of-the-State-2017-Environmental-S.txt, 1.0401859103961324
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Social-and-Environmental-Considerations-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Technology-Commercialization-and-Entrepr.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Framework-for-understanding-_-classify.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Data-The-Fuel-of-the-Digital-Economy-an.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-Policy-Agenda-for-the-Digital-Economy.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\State-of-the-State-2017-Environmental-S.txt
 cluster 14, label ['fintech', 'bank', 'financi', 'servic', 'technolog', 'thi', 'market', 'payment', 'digit', 'innov']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Mind-the-gap-Making-Basel-standards-wor.txt, 0.9762566236762202
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\IN-FOCUS.txt, 0.9625446052957816
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Moving-Thailand-Towards-a-New-Business-a.txt, 1.0985614196731117
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-CROSS-NATIONAL-STUDY-OF-THE-DRIVERS-OF.txt, 1.0599307048276134
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bangladesh.txt, 1.0166803390152526
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Japanese-banking-regulations-and-SME-fin.txt, 1.006592307609677
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Motives-to-form-alliances-for-digital-in.txt, 0.8377197728484064
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BLUE-OCEAN-STRATEGY.txt, 0.9408774474716968
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financializing-authoritarian-capitalism.txt, 0.9586576312811449
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Understanding-Fintech-and-Private-Equity.txt, 0.7115040931476566
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Wednesday,-July.txt, 0.9710534857067051
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-technology-in-Indonesia-disru.txt, 0.8790638924083232
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bracing-for-seven-critical-changes-as-fi.txt, 0.9524572063038922
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-and-RegTech-Opportunities-and-C.txt, 0.9864349578593462
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Gaining-from-digital-disruption-The-Tha.txt, 0.9358625527394773
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Emergence-of-Fintech-Companies-in-Southe.txt, 1.0896399734611615
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINTECH-USHERING-IN-A-DIGITAL-REVOLUTIO.txt, 0.9278814506995378
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-fintech-challenge.txt, 1.0416422585853802
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintechs-and-their-emergence-in-banking-.txt, 0.891365289324764
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINANCIAL-INCLUSION-THE-ROLE-OF-FINTECH.txt, 0.9945385721986059
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-in-Sub-Saharan-African-Countries.txt, 1.0223310244494268
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-in-China_s-Capital-Market.txt, 0.9841251007132623
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-Finance-and-Financial-Fragility.txt, 0.9226850164623178
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech_s-growing-influence-on-Financial.txt, 0.8830394824818073
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINTECH-FOR-FINANCIAL-INCLUSION.txt, 0.9572935726835496
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Disruption-of-Fintech-On-Rural-Bank.txt, 0.9943223059060768
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-POTENTIAL-OF-THE-FINTECH-INDUSTRY-TO.txt, 0.9412957448293884
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INVESTIGATING-THE-PERCEPTION-OF-FIN-TECH.txt, 1.0065062970181347
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-Evolution-and-regulation.txt, 0.9598190595124385
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-and-banking-problems-facing-Ro.txt, 0.9172261332333279
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Competition-issues-in-the-Area-of-Financ.txt, 0.9478312386804019
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-phenomenon-a-financial-revoluti.txt, 1.0207170655084317
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-how-technologies-are-shaping-ba.txt, 0.8802203187414903
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Mind-the-gap-Making-Basel-standards-wor.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\IN-FOCUS.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Moving-Thailand-Towards-a-New-Business-a.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\A-CROSS-NATIONAL-STUDY-OF-THE-DRIVERS-OF.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bangladesh.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Japanese-banking-regulations-and-SME-fin.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Motives-to-form-alliances-for-digital-in.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\BLUE-OCEAN-STRATEGY.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financializing-authoritarian-capitalism.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Understanding-Fintech-and-Private-Equity.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Wednesday,-July.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-technology-in-Indonesia-disru.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Bracing-for-seven-critical-changes-as-fi.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-and-RegTech-Opportunities-and-C.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Gaining-from-digital-disruption-The-Tha.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Emergence-of-Fintech-Companies-in-Southe.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINTECH-USHERING-IN-A-DIGITAL-REVOLUTIO.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-fintech-challenge.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintechs-and-their-emergence-in-banking-.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINANCIAL-INCLUSION-THE-ROLE-OF-FINTECH.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-in-Sub-Saharan-African-Countries.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-in-China_s-Capital-Market.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-Finance-and-Financial-Fragility.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech_s-growing-influence-on-Financial.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FINTECH-FOR-FINANCIAL-INCLUSION.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\The-Disruption-of-Fintech-On-Rural-Bank.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\THE-POTENTIAL-OF-THE-FINTECH-INDUSTRY-TO.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\INVESTIGATING-THE-PERCEPTION-OF-FIN-TECH.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-Evolution-and-regulation.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Financial-and-banking-problems-facing-Ro.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Competition-issues-in-the-Area-of-Financ.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Fintech-phenomenon-a-financial-revoluti.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\FinTech-how-technologies-are-shaping-ba.txt
 cluster 15, label ['woman', 'gender', 'men', 'womenl', 'kazakhstan', 'firm', 'ecommerc', 'onlin', 'nguyen', 'export']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Women-led-Firms-on-the-Web-Challenges-a.txt, 1.2231270970165893
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Minh-City.txt, 1.2508107669035307
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Women-led-Firms-on-the-Web-Challenges-a.txt
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Minh-City.txt
 cluster 16, label ['award', 'bank', 'tmi', 'client', 'winner', 'manag', 'nomin', 'solut', 'cash', 'testimoni']
-	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Awards.txt, 1.3528861214083703
+	 F:\WorkSpace\25 article clustering\Clustering_of_Articles\dataset\corpus\Awards.txt

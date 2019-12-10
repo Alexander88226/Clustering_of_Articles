@@ -187,7 +187,7 @@ for i in range(0, k_clusters):
 
     # export filenames for each cluster
     for index in indexs:
-        clustering_file_handle.write("\t %s, %s\n"%(all_data.filenames[fileindexs[index]], str(d[index])))
+        clustering_file_handle.write("\t %s\n"%(all_data.filenames[fileindexs[index]]))
 
 clustering_file_handle.close()
 # print("Silhouette Coefficient: %0.3f"
