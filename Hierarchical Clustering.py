@@ -33,7 +33,7 @@ description: display feature distribution for each cluster
 """
 def plot_clusters(data, algorithm, args, kwds):
     start_time = time.time()
-    algorithm(*args, **kwds)
+    algorithm(*args, **kwds).
     labels = algorithm(*args, **kwds).fit_predict(data)
     end_time = time.time()
     palette = sns.color_palette('deep', np.unique(labels).max() + 1)
@@ -61,7 +61,7 @@ def get_top_n_words_n_que(corpus, n=None):
     return words_freq[:n], words_freq_que[:n]
 
 
-def hierarchical_clustering(datasetDir):
+def hierarchical_clustering(datasetDir, preprocessing):
 
 
     all_data = datasets.load_files(dataSetDir2, description=None, load_content=True, encoding='utf-8', shuffle=False)
@@ -102,7 +102,8 @@ def hierarchical_clustering(datasetDir):
     """
     Output n top frequent words into file
     """
-    top_n_words_file = "top_n_words.data"
+
+    top_n_words_file = preprocessing + "top_n_words.data"
     out_filepath_handle = open(top_n_words_file, "w")
     word_names = []
     word_freqs = []
@@ -138,10 +139,10 @@ def hierarchical_clustering(datasetDir):
     plt.show()
 
 dataSetDir2 = os.path.join(os.getcwd(), "dataset")
-hierarchical_clustering(dataSetDir2)
+hierarchical_clustering(dataSetDir2, "full_preprocessing")
 
 dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
-hierarchical_clustering(dataSetDir2)
+hierarchical_clustering(dataSetDir2, "stemming")
 
 dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
-hierarchical_clustering(dataSetDir2)
+hierarchical_clustering(dataSetDir2, "lemmatizing")
