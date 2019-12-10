@@ -34,24 +34,6 @@ plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 dataSetDir2 = os.path.join(os.getcwd(), "dataset")
 
 
-# """
-# filter non-ascii string, for instance //x08
-# """
-# for subdir, dirs, files in os.walk(dataSetDir2):
-#     for file in files:
-#         subdir_replaced = subdir.replace("\\", "/")     # Set all seperators to "/"
-#         filepath = subdir_replaced + "/" + file         # full org dataset file path
-#         subdirOnly = subdir_replaced[len(dataSetDir2):]  # Get only sub directory names
-#         extractedFilePath = dataSetDir2 + subdirOnly
-#         extractedFileName = extractedFilePath + "/" + file
-
-#         if not (os.path.exists(extractedFilePath)):
-#                 os.makedirs(extractedFilePath)          # Create sub directory in dataSetDir2
-#         orgDatasetFile = open(filepath, 'r')            # Open org dataset file
-#         fileLines = orgDatasetFile.readlines()          # read text file as line array
-#         extractedFile = open(extractedFileName, 'w')    # Create new file for writing subject and body
-
-        
 #  load our data-----------------------------------------
 all_data = datasets.load_files(dataSetDir2, 
     description=None, load_content=True, encoding='utf-8', shuffle=False)
@@ -118,71 +100,7 @@ results.to_csv("2.csv", encoding='utf-8')
 #--------------------------------------------------------------
 
 
-"""
-DBSCAN clustering 
-get the number of clusters
-"""
 
-# # Compute DBSCAN
-# db = DBSCAN(eps=1.1, min_samples=2).fit(X)
-# core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
-# core_samples_mask[db.core_sample_indices_] = True
-# labels = db.labels_
-
-# print(labels)
-
-# # Number of clusters in labels, ignoring noise if present.
-# n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
-# n_noise_ = list(labels).count(-1)
-
-# print('Estimated number of clusters: %d' % n_clusters_)
-# print('Estimated number of noise points: %d' % n_noise_)
-
-# # #############################################################################
-# # Plot result
-
-# # Black removed and is used for noise instead.
-# unique_labels = set(labels)
-# colors = [plt.cm.Spectral(each) for each in np.linspace(0, 1, len(unique_labels))]
-# for k, col in zip(unique_labels, colors):
-#     if k == -1:
-#         # Black used for noise.
-#         col = [0, 0, 0, 1]
-
-#     class_member_mask = (labels == k)
-
-#     xy = X[class_member_mask & core_samples_mask]
-#     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=14)
-
-#     xy = X[class_member_mask & ~core_samples_mask]
-#     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=6)
-
-# plt.title('Estimated number of clusters: %d' % n_clusters_)
-# plt.show()
-
-
-"""
-Finding Optimal Clusters
-"""
-
-# def find_optimal_clusters(data, max_k):
-#     iters = range(2, max_k+1, 2)
-    
-#     sse = []
-#     for k in iters:
-#         sse.append(KMeans(n_clusters=k).fit(data).inertia_)#, init_size=1024, batch_size=2048, random_state=20).fit(data).inertia_
-#         print('Fit {} clusters'.format(k))
-#     f, ax = plt.subplots(1, 1)
-#     ax.plot(iters, sse, marker='o')
-#     ax.set_xlabel('Cluster Centers')
-#     ax.set_xticks(iters)
-#     ax.set_xticklabels(iters)
-#     ax.set_ylabel('SSE')
-#     ax.set_title('SSE by Cluster Center Plot')
-    
-# find_optimal_clusters(X, 20)
-# plt.show()
-#--------------------------------------------------------------
 
 
 
@@ -190,8 +108,8 @@ Finding Optimal Clusters
 k-means clustering 
 """
 
-k_clusters = 10
-km = KMeans(n_clusters=k_clusters, random_state=3425)
+k_clusters = 17
+km = KMeans(n_clusters=k_clusters, random_state=42)
 km.fit(X)
 # clusters = km.predict(X)
 
@@ -217,34 +135,7 @@ frame = plt.gca()
 frame.axes.get_xaxis().set_visible(False)
 frame.axes.get_yaxis().set_visible(False)
 plt.show()
-# plt.title('Clusters found by {}'.format(str(algorithm.__name__)), fontsize=24)
-"""
-Plotting Clusters
 
-"""
-# def plot_tsne_pca(data, labels):
-#     max_label = max(labels)
-#     print(max_label)
-#     max_items = np.random.choice(range(data.shape[0]), size=100, replace=False)
-    
-#     pca = PCA(n_components=2).fit_transform(data[max_items,:].todense())
-#     tsne = TSNE().fit_transform(PCA(n_components=100).fit_transform(data[max_items,:].todense()))
-    
-    
-#     idx = np.random.choice(range(pca.shape[0]), size=100, replace=False)
-#     label_subset = labels[max_items]
-#     label_subset = [cm.hsv(i/max_label) for i in label_subset[idx]]
-    
-#     f, ax = plt.subplots(1, 2, figsize=(14, 6))
-    
-#     ax[0].scatter(pca[idx, 0], pca[idx, 1], c=label_subset)
-#     ax[0].set_title('PCA Cluster Plot')
-    
-#     ax[1].scatter(tsne[idx, 0], tsne[idx, 1], c=label_subset)
-#     ax[1].set_title('TSNE Cluster Plot')
-    
-# plot_tsne_pca(X, clusters)
-# plt.show()
 
 """
 output the filenames of each clusters, order by distance from center to each sample vector
@@ -255,10 +146,29 @@ clustering_file_handle = open(clustering_result_file, 'w')
 """
 show the labels of cluster data
 """
-print(km.labels_)
+
+original_space_centroids = svd.inverse_transform(km.cluster_centers_)
+order_centroids = original_space_centroids.argsort()[:, ::-1]
+cluster_labels_list = []
+# for i in range(k_clusters):
+#     cluster_label = []
+#     print("Cluster %d:" % i, end='')
+#     for ind in order_centroids[i, :10]:
+#         cluster_label.append(terms[ind])
+#     # cluster_label.join(terms[ind] for ind in order_centroids[i, :10])
+#     cluster_labels_list.append(cluster_label)
+# print(cluster_labels_list)
+
+# print(km.labels_)
 
 for i in range(0, k_clusters):
     d = km.transform(X)[:,i]
+    cluster_label = []
+    print("Cluster %d:" % i, end='')
+    for ind in order_centroids[i, :10]:
+        cluster_label.append(terms[ind])
+    print(cluster_label)
+    clustering_file_handle.write("cluster %d, label %s\n"%(i, cluster_label))
     distances = []                      # distance list for each cluster
     fileindexs = []                     # filename index for each cluster
     counts_of_cluster = 0               # sample(file) count of each cluster
@@ -277,31 +187,31 @@ for i in range(0, k_clusters):
 
     # export filenames for each cluster
     for index in indexs:
-        clustering_file_handle.write("%d, %s, %s\n"%(i, all_data.filenames[fileindexs[index]], str(d[index])))
+        clustering_file_handle.write("\t %s, %s\n"%(all_data.filenames[fileindexs[index]], str(d[index])))
 
 clustering_file_handle.close()
-print("Silhouette Coefficient: %0.3f"
-      % metrics.silhouette_score(X, km.labels_, sample_size=1000))
+# print("Silhouette Coefficient: %0.3f"
+#       % metrics.silhouette_score(X, km.labels_, sample_size=1000))
 
 
 
-"""
-get the query article
-and predict the cluster of query article
-and display the distance array
-"""
-testfile = sys.argv[1]
-testfile_handle = open(testfile, 'r') 
-lines_for_predicting = testfile_handle.read()
+# """
+# get the query article
+# and predict the cluster of query article
+# and display the distance array
+# """
+# testfile = sys.argv[1]
+# testfile_handle = open(testfile, 'r') 
+# lines_for_predicting = testfile_handle.read()
 
-lines_for_predicting = [lines_for_predicting]
+# lines_for_predicting = [lines_for_predicting]
 
-sample = count_vectorizer.transform(lines_for_predicting)
-print(sample.shape)
-sample = lsa.transform(sample)
-print(sample.shape)
-prelabel = km.predict(sample)
-distance = km.transform(sample)
+# sample = count_vectorizer.transform(lines_for_predicting)
+# print(sample.shape)
+# sample = lsa.transform(sample)
+# print(sample.shape)
+# prelabel = km.predict(sample)
+# distance = km.transform(sample)
 
-print(prelabel)
-print(distance)
+# print(prelabel)
+# print(distance)
