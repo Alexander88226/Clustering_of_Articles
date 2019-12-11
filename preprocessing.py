@@ -9,6 +9,9 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from string import punctuation
 
+stop_words = set(stopwords.words('english'))
+
+
 nltk.download('wordnet')
 
 """
@@ -16,21 +19,29 @@ nltk.download('wordnet')
 """
 def to_lower(text):
     return ' '.join([w.lower() for w in word_tokenize(text)])
+
 """
-2. remove numbers
+2. Remove stopwords
+"""
+def remove_stopwords(text):
+    tokens = word_tokenize(text)
+    return ' '.join(t for t in tokens if not t in stop_words)
+
+"""
+3. remove numbers
 """
 def remove_digit(text):
     return ''.join(c for c in text if not c.isdigit())
 
 """
-3. Remove punctuation
+4. Remove punctuation
 """
 
 def strip_punctuation(s):
     return ''.join(c for c in s if c not in punctuation)
 
 """
-4. Lemmatize
+5. Lemmatize
 """
 stopword = stopwords.words('english')
 wordnet_lemmatizer = WordNetLemmatizer()
@@ -40,7 +51,7 @@ def lemmatizing(text):
     return ' '.join(s for s in lemmatized_word)
 
 """
-5. Stemming
+6. Stemming
 """
 porter_stemmer = PorterStemmer()
 def stemming(text):
@@ -49,7 +60,7 @@ def stemming(text):
     return ' '.join(s for s in stemmed_word)
 
 """
-6. Remove short words
+7. Remove short words
 """
 def remove_short_words(text):
     ret_text = ''
@@ -92,6 +103,8 @@ for filename in os.listdir(corpus_dir):
     filtered = to_lower(filtered)
     # remove numbers
     filtered = remove_digit(filtered)
+    # remove stopwords
+    filtered = remove_stopwords(filtered)
     # remove puntuation
     filtered = strip_punctuation(filtered)
     # lemmatizing
