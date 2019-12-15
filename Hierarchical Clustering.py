@@ -24,7 +24,7 @@ import scipy.cluster.hierarchy as shc
 set parameters for plot
 """
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
-n_clusters = 17
+n_clusters = 14
 
 
 """
@@ -33,7 +33,7 @@ description: display feature distribution for each cluster
 """
 def plot_clusters(data, algorithm, args, kwds):
     start_time = time.time()
-    algorithm(*args, **kwds).
+    algorithm(*args, **kwds)
     labels = algorithm(*args, **kwds).fit_predict(data)
     end_time = time.time()
     palette = sns.color_palette('deep', np.unique(labels).max() + 1)
@@ -139,10 +139,4 @@ def hierarchical_clustering(datasetDir, preprocessing):
     plt.show()
 
 dataSetDir2 = os.path.join(os.getcwd(), "dataset")
-hierarchical_clustering(dataSetDir2, "full_preprocessing")
-
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
-hierarchical_clustering(dataSetDir2, "stemming")
-
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
-hierarchical_clustering(dataSetDir2, "lemmatizing")
+hierarchical_clustering(dataSetDir2, "lemmatizing and removing 50 tmq words")
