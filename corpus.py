@@ -13,9 +13,9 @@ if not os.path.exists(path):
 	  
 print ("Does path exists : ", os.path.exists(path)) 
   
-import nltk.data 
-print ("\nDoes path exists in nltk : ",  
-       path in nltk.data.path) 
+# import nltk.data 
+# print ("\nDoes path exists in nltk : ",  
+#        path in nltk.data.path) 
 
 
 ############# Point 2
@@ -28,7 +28,7 @@ import string
 import subprocess
 import unicodedata
 ## Set important paths
-DOCS_PDF = os.path.join(os.getcwd(), "dataset", "pdf")
+DOCS_PDF = os.path.join(os.getcwd(), "pdf")
 
 def get_pdf_docs(path=DOCS_PDF):
 	"""
@@ -43,7 +43,7 @@ def get_pdf_docs(path=DOCS_PDF):
 print(len(list(get_pdf_docs())))
 
 ## Create a path to extract the corpus.
-CORPUS = os.path.join(os.getcwd(), "dataset", "corpus")
+CORPUS = os.path.join(os.getcwd(), "corpus")
 
 def extract_pdf_corpus(DOCS_PDF=DOCS_PDF, corpusval=CORPUS):
 	"""
@@ -72,21 +72,21 @@ def extract_pdf_corpus(DOCS_PDF=DOCS_PDF, corpusval=CORPUS):
 		# print(document)
 		############# Point 3
 
-		document=document.decode("unicode_escape") 
-		document=document.replace('\n','')
-		document=document.replace('\r','')
-		document=document.replace(',','')
+		document=document.decode("utf-8") 
+		document=document.replace('\n',' ')
+		document=document.replace('\r',' ')
+		document=document.replace(',',' ')
 		document=document.replace('-','')
-		document=document.replace(':','')
+		document=document.replace(':',' ')
 		
 		document=str(document)
 
 		############# Point 4
 
-		document=document.encode("unicode_escape") 
+		# document=document.encode("utf-8") 
 		document=str(document)
 
-		with codecs.open(outp, 'w') as f:
+		with codecs.open(outp, 'w', encoding='utf-8') as f:
 			f.write(document)
 # Run the extraction
 extract_pdf_corpus()
