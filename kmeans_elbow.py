@@ -28,7 +28,7 @@ def elbow_kmeans(datasetDir, flag):
     # Instantiate the clustering model and visualizer
     model = KMeans(random_state=42)
     if flag == 0:
-        title = "Elbow Score of Kmeans clustering for full preprocessing(stemming and lemmatizing)"
+        title = "Elbow Score of Kmeans clustering for lemmatizing and removing top frequent words"
     if flag == 1:
         title = "Elbow Score of Kmeans clustering for stemming"
     if flag == 2:
@@ -37,7 +37,7 @@ def elbow_kmeans(datasetDir, flag):
     kwargs = {'title': title}
 
     visualizer = KElbowVisualizer(
-        model, k=(4,20), metric='calinski_harabasz', timings=False, locate_elbow=False, **kwargs
+        model, k=(4,30), metric='calinski_harabasz', timings=False, locate_elbow=False, **kwargs
     )
 
     visualizer.fit(X)        # Fit the data to the visualizer
@@ -46,11 +46,11 @@ def elbow_kmeans(datasetDir, flag):
     visualizer.show()        # Finalize and render the figure
 
 full_dataSetDir = os.path.join(os.getcwd(), "dataset")
-stemming_datasetDir = os.path.join(os.getcwd(), "dataset_stemming")
-lemmatizing_datasetDir = os.path.join(os.getcwd(), "dataset_lemmatizing")
+# stemming_datasetDir = os.path.join(os.getcwd(), "dataset_stemming")
+# lemmatizing_datasetDir = os.path.join(os.getcwd(), "dataset_lemmatizing")
 
 elbow_kmeans(full_dataSetDir, 0)
-elbow_kmeans(stemming_datasetDir, 1)
-elbow_kmeans(lemmatizing_datasetDir, 2)
+# elbow_kmeans(stemming_datasetDir, 1)
+# elbow_kmeans(lemmatizing_datasetDir, 2)
 
 
