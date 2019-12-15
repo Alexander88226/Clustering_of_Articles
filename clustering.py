@@ -29,11 +29,11 @@ sns.set_context('poster')
 sns.set_color_codes()
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 
-k_clusters = 17
+k_clusters = 14
 
 def kmeans_clustering(datasetDir, preprocessing):
     #  load our data-----------------------------------------
-    all_data = datasets.load_files(dataSetDir2, 
+    all_data = datasets.load_files(datasetDir, 
         description=None, load_content=True, encoding='utf-8', shuffle=False)
     #--------------------------------------------------------------
     labels = all_data.target
@@ -43,7 +43,7 @@ def kmeans_clustering(datasetDir, preprocessing):
     This is a function that will count the number of times each word in the
     dataset occurs and project that count into a vector(TF-IDF vector). 
     """
-    count_vectorizer = TfidfVectorizer(stop_words='english')
+    count_vectorizer = TfidfVectorizer()
 
     X = count_vectorizer.fit_transform(raw_documents=all_data.data)
 
@@ -52,20 +52,20 @@ def kmeans_clustering(datasetDir, preprocessing):
     """
     feature_definition_file = preprocessing + '_feature_definition.data'
 
-    feature_definition_file_handle = open(feature_definition_file, 'w') 
+    feature_definition_file_handle = open(feature_definition_file, 'w', encoding='utf-8') 
     id = 0
     for name in count_vectorizer.get_feature_names():
         id = id + 1
         feature_definition_file_handle.write("%d, %s\n"%(id, name))
     feature_definition_file_handle.close()
 
-    """
-    export the TF-IDF vectors table into csv file
-    """
-    results = pd.DataFrame(X.toarray(), columns=count_vectorizer.get_feature_names())
+    # """
+    # export the TF-IDF vectors table into csv file
+    # """
+    # results = pd.DataFrame(X.toarray(), columns=count_vectorizer.get_feature_names())
 
-    results.to_csv(preprocessing+"1.csv", encoding='utf-8')
-    #--------------------------------------------------------------
+    # results.to_csv(preprocessing+"1.csv", encoding='utf-8')
+    # #--------------------------------------------------------------
 
 
     print("n_samples: %d, n_features: %d" % X.shape)
@@ -89,13 +89,13 @@ def kmeans_clustering(datasetDir, preprocessing):
 
     # print(X.shape)
 
-    """
-    export the TF-IDF vectors table into csv file
-    """
-    results = pd.DataFrame(X)
+    # """
+    # export the TF-IDF vectors table into csv file
+    # """
+    # results = pd.DataFrame(X)
 
-    results.to_csv(preprocessing + "2.csv", encoding='utf-8')
-    #--------------------------------------------------------------
+    # results.to_csv(preprocessing + "2.csv", encoding='utf-8')
+    # #--------------------------------------------------------------
 
 
 
@@ -113,7 +113,7 @@ def kmeans_clustering(datasetDir, preprocessing):
 
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
     centers_cluster_file = preprocessing + "_centers.data"
-    centers_cluster_handle = open(centers_cluster_file, 'w') 
+    centers_cluster_handle = open(centers_cluster_file, 'w', encoding='utf-8') 
     id = 0
     for center in order_centroids:
         id += 1
@@ -138,7 +138,7 @@ def kmeans_clustering(datasetDir, preprocessing):
     output the filenames of each clusters, order by distance from center to each sample vector
     """
     clustering_result_file = preprocessing + '_clustering_result.data'
-    clustering_file_handle = open(clustering_result_file, 'w') 
+    clustering_file_handle = open(clustering_result_file, 'w', encoding='utf-8') 
 
     """
     show the labels of cluster data
@@ -204,10 +204,10 @@ def kmeans_clustering(datasetDir, preprocessing):
 # print(prelabel)
 # print(distance)
 dataSetDir2 = os.path.join(os.getcwd(), "dataset")
-kmeans_clustering(dataSetDir2, "full_preprocessing")
+kmeans_clustering(dataSetDir2, "lemmatizing and removing 50 tmq words")
 
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
-kmeans_clustering(dataSetDir2, "stemming")
+# dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
+# kmeans_clustering(dataSetDir2, "stemming")
 
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
-kmeans_clustering(dataSetDir2, "lemmatizing")
+# dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
+# kmeans_clustering(dataSetDir2, "lemmatizing")
