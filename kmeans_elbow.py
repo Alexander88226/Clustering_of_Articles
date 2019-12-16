@@ -37,7 +37,7 @@ def elbow_kmeans(datasetDir, flag):
     kwargs = {'title': title}
 
     visualizer = KElbowVisualizer(
-        model, k=(4,30), metric='calinski_harabasz', timings=False, locate_elbow=False, **kwargs
+        model, k=(4,30), metric='calinski_harabasz',  **kwargs
     )
 
     visualizer.fit(X)        # Fit the data to the visualizer

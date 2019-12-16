@@ -29,7 +29,7 @@ sns.set_context('poster')
 sns.set_color_codes()
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 
-k_clusters = 14
+k_clusters = 10
 
 def kmeans_clustering(datasetDir, preprocessing):
     #  load our data-----------------------------------------

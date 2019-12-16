@@ -24,7 +24,7 @@ import scipy.cluster.hierarchy as shc
 set parameters for plot
 """
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
-n_clusters = 14
+n_clusters = 10
 
 
 """

@@ -62,7 +62,7 @@ normalizer = Normalizer(copy=False)
 lsa = make_pipeline(svd, normalizer)
 
 data = lsa.fit_transform(X)
-n_clusters = 14
+n_clusters = 10
 plot_clusters(data, cluster.KMeans, (), {'n_clusters':n_clusters})
 
 plot_clusters(data, cluster.AffinityPropagation, (), {'preference':-5.0, 'damping':0.95})
