@@ -25,13 +25,19 @@ from sklearn.decomposition import TruncatedSVD
 from sklearn.preprocessing import Normalizer
 from sklearn.pipeline import make_pipeline
 
+
 sns.set_context('poster')
 sns.set_color_codes()
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 
 k_clusters = 10
 
+plotDir = os.path.join(os.getcwd(), "clustering_result")
+
 def kmeans_clustering(datasetDir, preprocessing):
+
+    prefix = plotDir + "\\" + preprocessing
+
     #  load our data-----------------------------------------
     all_data = datasets.load_files(datasetDir, 
         description=None, load_content=True, encoding='utf-8', shuffle=False)
@@ -50,7 +56,7 @@ def kmeans_clustering(datasetDir, preprocessing):
     """
     export the feature names
     """
-    feature_definition_file = preprocessing + '_feature_definition.data'
+    feature_definition_file = prefix + '_feature_definition.data'
 
     feature_definition_file_handle = open(feature_definition_file, 'w', encoding='utf-8') 
     id = 0
@@ -83,12 +89,6 @@ def kmeans_clustering(datasetDir, preprocessing):
 
     X = lsa.fit_transform(X)
 
-
-    explained_variance = svd.explained_variance_ratio_.sum()
-    print("Explained variance of the SVD step: {}%".format(int(explained_variance * 100)))
-
-    # print(X.shape)
-
     # """
     # export the TF-IDF vectors table into csv file
     # """
@@ -111,14 +111,14 @@ def kmeans_clustering(datasetDir, preprocessing):
     # clusters = km.predict(X)
 
 
-    order_centroids = km.cluster_centers_.argsort()[:, ::-1]
-    centers_cluster_file = preprocessing + "_centers.data"
-    centers_cluster_handle = open(centers_cluster_file, 'w', encoding='utf-8') 
-    id = 0
-    for center in order_centroids:
-        id += 1
-        centers_cluster_handle.write("%d, %s\n"%(id, center))
-    centers_cluster_handle.close()
+    # order_centroids = km.cluster_centers_.argsort()[:, ::-1]
+    # centers_cluster_file = preprocessing + "_centers.data"
+    # centers_cluster_handle = open(centers_cluster_file, 'w', encoding='utf-8') 
+    # id = 0
+    # for center in order_centroids:
+    #     id += 1
+    #     centers_cluster_handle.write("%d, %s\n"%(id, center))
+    # centers_cluster_handle.close()
 
 
     terms = count_vectorizer.get_feature_names()
@@ -131,13 +131,18 @@ def kmeans_clustering(datasetDir, preprocessing):
     frame = plt.gca()
     frame.axes.get_xaxis().set_visible(False)
     frame.axes.get_yaxis().set_visible(False)
-    plt.show()
+    plt.savefig(prefix + "_kmeans clustering.png")
+    plt.close()
+
+
+    training_data_file = prefix + 'kmeans_training_data_file.data'
+    dump_svmlight_file(X, labels, training_data_file)
 
 
     """
     output the filenames of each clusters, order by distance from center to each sample vector
     """
-    clustering_result_file = preprocessing + '_clustering_result.data'
+    clustering_result_file = prefix + '_clustering_result.data'
     clustering_file_handle = open(clustering_result_file, 'w', encoding='utf-8') 
 
     """
@@ -178,36 +183,12 @@ def kmeans_clustering(datasetDir, preprocessing):
 
     clustering_file_handle.close()
 
-# print("Silhouette Coefficient: %0.3f"
-#       % metrics.silhouette_score(X, km.labels_, sample_size=1000))
 
+dataSetDir2 = os.path.join(os.getcwd(), "dataset_full")
+kmeans_clustering(dataSetDir2, "full preprocessing")
 
+dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
+kmeans_clustering(dataSetDir2, "stemming")
 
-# """
-# get the query article
-# and predict the cluster of query article
-# and display the distance array
-# """
-# testfile = sys.argv[1]
-# testfile_handle = open(testfile, 'r') 
-# lines_for_predicting = testfile_handle.read()
-
-# lines_for_predicting = [lines_for_predicting]
-
-# sample = count_vectorizer.transform(lines_for_predicting)
-# print(sample.shape)
-# sample = lsa.transform(sample)
-# print(sample.shape)
-# prelabel = km.predict(sample)
-# distance = km.transform(sample)
-
-# print(prelabel)
-# print(distance)
-dataSetDir2 = os.path.join(os.getcwd(), "dataset")
-kmeans_clustering(dataSetDir2, "lemmatizing and removing 50 tmq words")
-
-# dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
-# kmeans_clustering(dataSetDir2, "stemming")
-
-# dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
-# kmeans_clustering(dataSetDir2, "lemmatizing")
+dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
+kmeans_clustering(dataSetDir2, "lemmatizing")

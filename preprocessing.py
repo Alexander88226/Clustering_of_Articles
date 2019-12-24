@@ -91,30 +91,36 @@ def getLang(text):
         if lang.lang == 'en' and lang.prob > 0.01:
             return True, langs
     return False, langs
-    # word_tokens = nltk.word_tokenize(text)
-    # total_count = len(word_tokens)
-    # eng_count = 0
-    # for token in word_tokens:
-        
-    #     for lang in langs:
-    #         if lang.lang == 'en' and lang 
-    # if eng_count / total_count > 0.8:
-    #     return True
-    # else:
-    #     return False
-
 
 
 corpus_dir = os.path.join(os.getcwd(), "corpus")
 
-lemmatizing_out_dir = os.path.join(os.getcwd(), "dataset_lemmatizing")
+lemmatizing_out_dir = os.path.join(os.getcwd(), "pre_dataset_lemmatizing")
 if not (os.path.exists(lemmatizing_out_dir)):
     os.makedirs(lemmatizing_out_dir)          
 
 
-lemmatizing_out_dir = os.path.join(os.getcwd(), "dataset_lemmatizing", "corpus")
+lemmatizing_out_dir = os.path.join(os.getcwd(), "pre_dataset_lemmatizing", "corpus")
 if not (os.path.exists(lemmatizing_out_dir)):
     os.makedirs(lemmatizing_out_dir)          
+
+stemming_out_dir = os.path.join(os.getcwd(), "pre_dataset_stemming")
+if not (os.path.exists(stemming_out_dir)):
+    os.makedirs(stemming_out_dir)          
+
+
+stemming_out_dir = os.path.join(os.getcwd(), "pre_dataset_stemming", "corpus")
+if not (os.path.exists(stemming_out_dir)):
+    os.makedirs(stemming_out_dir)          
+
+full_out_dir = os.path.join(os.getcwd(), "pre_dataset_full")
+if not (os.path.exists(full_out_dir)):
+    os.makedirs(full_out_dir)          
+
+
+full_out_dir = os.path.join(os.getcwd(), "pre_dataset_full", "corpus")
+if not (os.path.exists(full_out_dir)):
+    os.makedirs(full_out_dir)          
 
 for filename in os.listdir(corpus_dir):
     filepath = corpus_dir + "/" + filename
@@ -140,11 +146,28 @@ for filename in os.listdir(corpus_dir):
     filtered = strip_punctuation(filtered)
     # lemmatizing
     lemmatizing_filtered = lemmatizing(filtered)
+    # stemming
+    stemming_filtered = stemming(filtered)
+    full_filtered = stemming(lemmatizing_filtered)
     # remove short words
     lemmatizing_filtered = remove_short_words(lemmatizing_filtered)
+    stemming_filtered = remove_short_words(stemming_filtered)
+    full_filtered = remove_short_words(full_filtered)
+
+    # write the filtered text into file
     out_filepath = lemmatizing_out_dir + "/" + filename
     out_filepath_handle = open(out_filepath, "w", encoding='utf-8')
     out_filepath_handle.write(lemmatizing_filtered)
+    out_filepath_handle.close()
+
+    out_filepath = stemming_out_dir + "/" + filename
+    out_filepath_handle = open(out_filepath, "w", encoding='utf-8')
+    out_filepath_handle.write(stemming_filtered)
+    out_filepath_handle.close()
+
+    out_filepath = full_out_dir + "/" + filename
+    out_filepath_handle = open(out_filepath, "w", encoding='utf-8')
+    out_filepath_handle.write(full_filtered)
     out_filepath_handle.close()
 
 # get 50 top frequent words
@@ -164,25 +187,30 @@ def get_top_n_words_n_que(corpus, n=None):
     words_freq =sorted(words_freq_que, key = lambda x: x[1], reverse=True)
     return words_freq[:n], words_freq_que[:n]
 
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
-all_data = datasets.load_files(dataSetDir2, description=None, load_content=True, encoding='utf-8', shuffle=False)
-top_n_words, que_n_words = get_top_n_words_n_que(all_data.data, 50);
-#-------------------------------------------
+def remove_50_top_words_from_corpus(dataset_dir_str):
+    dataSetDir2 = os.path.join(os.getcwd(), "pre_" + dataset_dir_str)
+    all_data = datasets.load_files(dataSetDir2, description=None, load_content=True, encoding='utf-8', shuffle=False)
+    top_n_words, que_n_words = get_top_n_words_n_que(all_data.data, 50);
+    #-------------------------------------------
 
-# remove 50 top frequent words from corpus
+    # remove 50 top frequent words from corpus
 
-corpus_out_dir = os.path.join(os.getcwd(), "dataset", "corpus")
-if not (os.path.exists(corpus_out_dir)):
-    os.makedirs(corpus_out_dir)          
-stopwords = [word for (word,freq) in top_n_words]
-print(stopwords)
+    corpus_out_dir = os.path.join(os.getcwd(), dataset_dir_str, "corpus")
+    if not (os.path.exists(corpus_out_dir)):
+        os.makedirs(corpus_out_dir)          
+    stopwords = [word for (word,freq) in top_n_words]
+    print(stopwords)
 
-for filename in os.listdir(lemmatizing_out_dir):
-    filepath = lemmatizing_out_dir + "/" + filename
-    f = open(filepath, 'r', encoding='utf-8')
-    s = f.read()
-    filtered = remove_top_freq_stopwords(s, stopwords)
-    out_filepath = corpus_out_dir + "/" + filename
-    out_filepath_handle = open(out_filepath, "w", encoding='utf-8')
-    out_filepath_handle.write(filtered)
-    out_filepath_handle.close()
+    for filename in os.listdir(lemmatizing_out_dir):
+        filepath = lemmatizing_out_dir + "/" + filename
+        f = open(filepath, 'r', encoding='utf-8')
+        s = f.read()
+        filtered = remove_top_freq_stopwords(s, stopwords)
+        out_filepath = corpus_out_dir + "/" + filename
+        out_filepath_handle = open(out_filepath, "w", encoding='utf-8')
+        out_filepath_handle.write(filtered)
+        out_filepath_handle.close()
+
+remove_50_top_words_from_corpus("dataset_lemmatizing")
+remove_50_top_words_from_corpus("dataset_stemming")
+remove_50_top_words_from_corpus("dataset_full")
