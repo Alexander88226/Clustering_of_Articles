@@ -20,12 +20,14 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import seaborn as sns
-
 from sklearn.decomposition import TruncatedSVD
 from sklearn.preprocessing import Normalizer
 from sklearn.pipeline import make_pipeline
+import nltk
+from nltk.corpus import words
+nltk.download('words')
 
-
+remaining_word_list = ['blockchain', 'crowdfunding']
 sns.set_context('poster')
 sns.set_color_codes()
 plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
@@ -33,6 +35,8 @@ plot_kwds = {'alpha' : 0.8, 's' : 80, 'linewidths':0}
 k_clusters = 10
 
 plotDir = os.path.join(os.getcwd(), "clustering_result")
+if not (os.path.exists(plotDir)):
+    os.makedirs(plotDir)          
 
 def kmeans_clustering(datasetDir, preprocessing):
 
@@ -151,14 +155,19 @@ def kmeans_clustering(datasetDir, preprocessing):
 
     original_space_centroids = svd.inverse_transform(km.cluster_centers_)
     order_centroids = original_space_centroids.argsort()[:, ::-1]
-    cluster_labels_list = []
 
     for i in range(0, k_clusters):
         d = km.transform(X)[:,i]
         cluster_label = []
         print("Cluster %d:" % i, end='')
-        for ind in order_centroids[i, :10]:
-            cluster_label.append(terms[ind])
+        label_word_cnt = 0          
+
+        for ind in order_centroids[i]:
+            if(terms[ind] in words.words() or terms[ind] in remaining_word_list):
+                label_word_cnt += 1
+                cluster_label.append(terms[ind])
+            if label_word_cnt >= 10:
+                break                
         print(cluster_label)
         clustering_file_handle.write("cluster %d, label %s\n"%(i, cluster_label))
         distances = []                      # distance list for each cluster
@@ -184,11 +193,11 @@ def kmeans_clustering(datasetDir, preprocessing):
     clustering_file_handle.close()
 
 
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_full")
-kmeans_clustering(dataSetDir2, "full preprocessing")
+# dataSetDir2 = os.path.join(os.getcwd(), "dataset_full")
+# kmeans_clustering(dataSetDir2, "full preprocessing")
 
-dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
-kmeans_clustering(dataSetDir2, "stemming")
+# dataSetDir2 = os.path.join(os.getcwd(), "dataset_stemming")
+# kmeans_clustering(dataSetDir2, "stemming")
 
 dataSetDir2 = os.path.join(os.getcwd(), "dataset_lemmatizing")
 kmeans_clustering(dataSetDir2, "lemmatizing")

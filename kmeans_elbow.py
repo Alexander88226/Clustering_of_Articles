@@ -102,12 +102,12 @@ def elbow_kmeans(datasetDir, flag):
     plt.close()
     # plt.show()
 
-full_dataSetDir = os.path.join(os.getcwd(), "dataset_full")
-stemming_datasetDir = os.path.join(os.getcwd(), "dataset_stemming")
+# full_dataSetDir = os.path.join(os.getcwd(), "dataset_full")
+# stemming_datasetDir = os.path.join(os.getcwd(), "dataset_stemming")
 lemmatizing_datasetDir = os.path.join(os.getcwd(), "dataset_lemmatizing")
 
-elbow_kmeans(full_dataSetDir, 0)
-elbow_kmeans(stemming_datasetDir, 1)
+# elbow_kmeans(full_dataSetDir, 0)
+# elbow_kmeans(stemming_datasetDir, 1)
 elbow_kmeans(lemmatizing_datasetDir, 2)
 
 
